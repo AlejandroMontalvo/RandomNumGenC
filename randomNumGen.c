@@ -7,8 +7,7 @@
 
 // Generates and prints 'count' random
 // numbers in range [lower, upper].
-void printRandoms(int lower, int upper,
-							int count) {
+void printRandoms(int lower, int upper, int count) {
 	int i;
 
 	printf("\nGenerated Numbers:\n");

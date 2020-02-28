@@ -7,7 +7,8 @@
 
 // Generates and prints 'count' random
 // numbers in range [lower, upper].
-void printRandoms(int lower, int upper, int count) {
+void printRandoms(int lower, int upper,
+							int count) {
 	int i;
 
 	printf("\nGenerated Numbers:\n");
@@ -38,6 +39,12 @@ int main() {
         printf("\n\nGenerate new set? (y/n)\n");
         scanf(" %c",&c);
         printf("\n");
+        do {
+            printf("Please enter a valid input!\n");
+            scanf(" %c",&c);
+            printf("\n");
+        } while(c!='y'&&c!='n');
+
     } while(c=='y');
 
     if (c=='n'){
